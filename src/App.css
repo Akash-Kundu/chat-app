@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color:#cd82fa
+}
+
+
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #cd83fb; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth h1 {
+  font-size: 40px;
+  font-weight: 750;
+  margin-bottom: 20px;
+  color: #333; /* dark gray text */
+  font-family: "Monsterrat", sans-serif;
+}
+
+.auth button {
+  background-color: #5913ae;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "Monsterrat", sans-serif;
+}
+
+.auth button:hover {
+  background-color: #3c0a7a;
+}
+
+/* For Chat Room entry point */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #a45cfc;
+  border: 1px solid #7d2be0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vh; /* adjust the width to your liking */
+  height: 200px;
+  
+}
+
+.room label {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Monsterrat", sans-serif;
+  font-weight: bold;
+  
+}
+
+.room input {
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid #7F00FF;
+  border-radius: 27px;
+  width: 50vh;
+  margin-bottom: 20px;
+}
+
+.room button {
+  background-color: #5913ae;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.room button:hover {
+  background-color: #3c0a7a;
+}
+
+.sign-out {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.sign-out button {
+  background-color: #454885;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 27px;
+  cursor: pointer;
+  font-family: "Monsterrat", sans-serif;
+}
+
+.sign-out button:hover {
+  background-color: #34365a;
+}
+
+/* Global Styles */
+.chat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 400px;
+  background-color: #34365a;
+  border: 1px solid #9e8188;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+
+.header {
+  font-family: "Monsterrat", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  background-color: #BF40BF;
+  color: #541c84;
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  border-radius: 18px;
+}
+
+.header h1 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Message Container Styles */
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-y: auto;
+  font-family: "Monsterrat", sans-serif;
+}
+
+/* Change the scrollbar width */
+::-webkit-scrollbar {
+  width: 10px; /* or height: 10px; */
+}
+
+/* Change the scrollbar background color */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Change the scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
+/* Change the scrollbar thumb hover color */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+/* Change the scrollbar button color */
+::-webkit-scrollbar-button {
+  background-color: #ccc;
+}
+
+.message {
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.message:last-child {
+  border-bottom: none;
+}
+
+.user {
+  font-weight: bold;
+  color: #337ab7;
+}
+
+/* New Message Form Styles */
+
+.new-message-form {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.new-message-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 4px solid #7F00FF;
+  border-radius: 40px;
+  margin-bottom: 5px;
+}
+
+.send-button {
+  background-color: #5913ae;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.send-button:hover {
+  background-color: #3c0a7a;
+}
